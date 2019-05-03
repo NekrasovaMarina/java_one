@@ -7,8 +7,16 @@ public class First {
 //		hello ("Данила");
 //		hello ("Марина");
 
-		Point p = new Point(3,4, 6, 8);
-		System.out.println("расстояние между двумя точками (6;8) и (3,4) равно "+p.distance());
+		Point p1 = new Point(3, 4);
+		Point p2 = new Point(6, 8);
+		System.out.println("расстояние между двумя точками (6;8) и (3,4) равно "+distance(p1, p2));
+	}
+
+		public static double distance(Point p1, Point p2) {
+				double d = Math.sqrt((p2.x - p1.x) * (p2.x - p1.x) + (p2.y - p1.y) * (p2.y - p1.y));
+				return d;
+		}
+	}
 
 //		Square s = new Square(5); // создали объект типа Square
 //		//s.l= 5;
@@ -52,9 +60,6 @@ public class First {
 
 
 
-//	public static double distance(Point p2, Point p1){
-//		double d = Math.sqrt((p2.x-p1.x)*(p2.x-p1.x)+(p2.y-p1.y)*(p2.y-p1.y));
-//		return d;
-	}
-}
+
+
 
